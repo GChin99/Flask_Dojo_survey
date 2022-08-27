@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NINJA BONUS: Use a CSS framework to style your form -->
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'style.css')}}">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Dojo Survey</h1>
+        <form action="/ninjas" method="post">
+            <div class="name">
+                <label class="title" for="name">Name:</label><br>
+                <input type="text" name="name">
+            </div>
+            <div class="location">
+                <label class="title" for="dojo_location">Dojo Location:</label><br>
+                <select name='location'>
+                    <option value=''></option>
+                    <option value='Chicago'>Chicago</option>
+                    <option value='Dallas'>Dallas</option>
+                    <option value='Los_angeles'>Los Angeles</option>
+                    <option value='Online'>Online</option>
+                    <option value='Seattle'>Seattle</option>
+                </select>
+            </div>
+            <!-- Drop down for favorite language -->
+            <!-- <div class="language">
+                <label for="favorite_language">Favorite Language:</label><br>
+                <select name='language'>
+                    <option value=''></option>
+                    <option value='Python'>Python</option>
+                    <option value='CSS'>Css</option>
+                    <option value='JavaScript'>JavaScript</option>
+                    <option value='HTML'>HTML</option>
+                    <option value='C#'>C#</option>
+                </select>
+            </div> -->
+
+            <!-- NINJA BONUS: Include a set of radio buttons on your form -->
+            <div class="language">
+                <label class="title" for="language">Favorite Language:</label><br>
+                <input type="radio" name="language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" name="language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" name="language" value="JavaScript">
+                <label for="javascript">JavaScript</label><br>
+                <input type="radio" name="language" value="Python">
+                <label for="python">Python</label><br>
+                <input type="radio" name="language" value="C#">
+                <label for="C#">C#</label>
+            </div>
+            <div class="comment">
+                <p class="title">Comment (optional)</p>
+                <textarea name="comments" cols="30" rows="10"></textarea>
+            </div>
+            <input type="submit" value="create ninja">
+        </form>
+    </div>
+</body>
+</html>

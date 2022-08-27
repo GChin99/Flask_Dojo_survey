@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Submitted Info</h1>
+        <table>
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td>{{session["ninja_name"]}}</td>
+            </tr>
+            <tr>
+                <td>Dojo Location:</td>
+                <td>{{session["ninja_location"]}}</td>
+            </tr>
+            <tr>
+                <td>Favorite Language:</td>
+                <td>{{session["ninja_language"]}}</td>
+            </tr>
+            <tr>
+                <td>Comment:</td>
+                <td>{{session["ninja_comments"]}}</td>
+            </tr>
+        </table>
+        <a href="/"><button>Go Back</button></a>
+    </div>
+</body>
+</html>

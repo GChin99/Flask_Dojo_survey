@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    width:1000px;
+    height: 500px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    margin-bottom: 10px;
+}
+
+.title{
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+}
